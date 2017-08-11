@@ -7,3 +7,6 @@ from django.http import HttpResponse
 
 def index(request):
   return HttpResponse("<h1>This is the Music Homepage</h1>")
+
+def detail(request, album_id):
+  return HttpResponse("<h2>Detail for album ID: " + str(album_id) + "</h2>")
